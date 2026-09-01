@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;700;800&family=Noto+Sans+Thai:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Hero */
+.hero-box {
+  position: relative;
+  background: radial-gradient(circle at 15% 20%, rgba(220,53,69,0.18), transparent 40%),
+              radial-gradient(circle at 85% 80%, rgba(13,202,240,0.15), transparent 45%);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Stat boxes */
+.stat-box {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.stat-box:hover {
+  transform: translateY(-4px);
+  border-color: #dc3545;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35) !important;
+}
+
+/* Stars */
+.text-warning {
+  letter-spacing: 2px;
+}
+
+/* Nav link underline */
+.navbar-nav .nav-link {
+  position: relative;
+}
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem; right: 0.5rem; bottom: 0;
+  height: 2px;
+  background: #dc3545;
+}
+
+/* Filter pills (list.html) */
+.nav-pills .nav-link {
+  border: 1px solid rgba(255,255,255,0.15);
+  margin-right: 0.4rem;
+}
+.nav-pills .nav-link.active {
+  background-color: #dc3545;
+}
+
+/* Detail cover / blockquote */
+.detail-cover {
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.blockquote {
+  border-color: #dc3545 !important;
+}
